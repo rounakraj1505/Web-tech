@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Promo site for FitTrack - a mobile fitness tracking app">
+    <title>FitTrack - Mobile App Promo Site</title>
+
+    <!-- Internal CSS: background color and text color applied here -->
+    <style>
+        body {
+            background-color: #f0f8ff;
+            color: #222222;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, footer {
+            background-color: #2c3e50;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            color: #16a085;
+        }
+
+        .section {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 15px 25px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            color: #ffffff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table, th, td {
+            border: 1px solid #333333;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #16a085;
+            color: #ffffff;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+        }
+
+        .back-to-top {
+            display: block;
+            text-align: right;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ============ HEADER / BOOKMARK TARGET SECTION ============ -->
+    <header id="top">
+        <h1>FitTrack - Your Personal Fitness Companion</h1>
+        <p>The smarter way to track workouts, meals, and progress - right from your phone.</p>
+
+        <!-- Internal navigation links (bookmark links to sections using id) -->
+        <nav>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#download">Download</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- ============ ABOUT SECTION ============ -->
+    <div class="section" id="about">
+        <h2>About FitTrack</h2>
+        <p>
+            FitTrack is a mobile application designed to help users build healthier habits.
+            Whether you are a beginner or a seasoned athlete, FitTrack adapts to your goals
+            and keeps you motivated every single day.
+        </p>
+        <p>
+            Our mission is simple: make fitness tracking effortless, accurate, and fun.
+            With FitTrack, thousands of users have already reached their personal fitness milestones.
+        </p>
+
+        <!-- Descriptive image -->
+        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=700"
+             alt="Person using a mobile fitness tracking app on a smartphone">
+
+        <!-- External link opening in a new tab -->
+        <p>
+            Read more about mobile health trends on
+            <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener">
+                the World Health Organization website
+            </a>.
+        </p>
+    </div>
+
+    <!-- ============ FEATURES SECTION ============ -->
+    <div class="section" id="features">
+        <h2>App Features</h2>
+
+        <h3>Core Features</h3>
+        <!-- Unordered nested list -->
+        <ul>
+            <li>Workout Tracking
+                <ul>
+                    <li>Cardio sessions</li>
+                    <li>Strength training</li>
+                    <li>Yoga and flexibility routines</li>
+                </ul>
+            </li>
+            <li>Nutrition Logging
+                <ul>
+                    <li>Calorie counter</li>
+                    <li>Macro breakdown</li>
+                </ul>
+            </li>
+            <li>Progress Reports</li>
+        </ul>
+
+        <h3>How to Get Started</h3>
+        <!-- Ordered nested list -->
+        <ol>
+            <li>Download the app
+                <ol>
+                    <li>Available on Android</li>
+                    <li>Available on iOS</li>
+                </ol>
+            </li>
+            <li>Create your free account</li>
+            <li>Set your fitness goal</li>
+            <li>Start tracking daily!</li>
+        </ol>
+
+        <h3>Key Terms</h3>
+        <!-- Description list -->
+        <dl>
+            <dt>BMI</dt>
+            <dd>Body Mass Index - a measure of body fat based on height and weight.</dd>
+
+            <dt>Macros</dt>
+            <dd>Short for macronutrients: proteins, carbohydrates, and fats.</dd>
+
+            <dt>Streak</dt>
+            <dd>The number of consecutive days a user has logged an activity in FitTrack.</dd>
+        </dl>
+
+        <a class="back-to-top" href="#top">Back to top</a>
+    </div>
+
+    <!-- ============ GALLERY SECTION (Clickable Image Link) ============ -->
+    <div class="section" id="gallery">
+        <h2>App Screenshots</h2>
+        <p>Click the image below to view a full-size preview of the FitTrack dashboard.</p>
+
+        <!-- Clickable image link -->
+        <a href="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200" target="_blank" rel="noopener">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400"
+                 alt="FitTrack dashboard screenshot preview - click to enlarge">
+        </a>
+
+        <a class="back-to-top" href="#top">Back to top</a>
+    </div>
+
+    <!-- ============ PRICING TABLE SECTION ============ -->
+    <div class="section" id="pricing">
+        <h2>Pricing Plans</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Plan</th>
+                    <th>Price</th>
+                    <th>Features</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Free</td>
+                    <td>$0/month</td>
+                    <td>Basic workout tracking</td>
+                </tr>
+                <tr>
+                    <td>Premium</td>
+                    <td>$4.99/month</td>
+                    <td>Nutrition logging + Progress reports</td>
+                </tr>
+                <tr>
+                    <td>Pro</td>
+                    <td>$9.99/month</td>
+                    <td>All features + Personal coaching</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <a class="back-to-top" href="#top">Back to top</a>
+    </div>
+
+    <!-- ============ DOWNLOAD SECTION ============ -->
+    <div class="section" id="download">
+        <h2>Download FitTrack Today</h2>
+        <p>
+            Get started on your fitness journey now. FitTrack is free to download and available
+            on all major app stores.
+        </p>
+        <!-- External links to app stores -->
+        <p>
+            <a href="https://play.google.com" target="_blank" rel="noopener">Download on Google Play</a> |
+            <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener">Download on the App Store</a>
+        </p>
+
+        <a class="back-to-top" href="#top">Back to top</a>
+    </div>
+
+    <!-- ============ CONTACT SECTION ============ -->
+    <div class="section" id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out to our support team anytime.</p>
+
+        <!-- Email link -->
+        <p>Email: <a href="mailto:support@fittrackapp.com">support@fittrackapp.com</a></p>
+
+        <!-- Phone link -->
+        <p>Phone: <a href="tel:+911234567890">+91 12345 67890</a></p>
+
+        <a class="back-to-top" href="#top">Back to top</a>
+    </div>
+
+    <!-- ============ FOOTER SECTION ============ -->
+    <footer>
+        <p>&copy; 2026 FitTrack. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
