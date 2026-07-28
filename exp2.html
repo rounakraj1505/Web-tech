@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Registration Form</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+        background:#e8f0fe;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        min-height:100vh;
+        padding:20px;
+    }
+
+    .container{
+        width:700px;
+        background:white;
+        padding:30px;
+        border-radius:10px;
+        box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    h2{
+        text-align:center;
+        margin-bottom:25px;
+        color:#0d47a1;
+    }
+
+    table{
+        width:100%;
+    }
+
+    td{
+        padding:10px;
+        vertical-align:top;
+    }
+
+    label{
+        font-weight:bold;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=password],
+    input[type=number],
+    input[type=date],
+    select,
+    textarea{
+        width:100%;
+        padding:8px;
+        border:1px solid #999;
+        border-radius:5px;
+        margin-top:5px;
+    }
+
+    textarea{
+        resize:vertical;
+    }
+
+    input[type=range]{
+        width:100%;
+    }
+
+    .buttons{
+        text-align:center;
+        margin-top:20px;
+    }
+
+    input[type=submit],
+    input[type=reset]{
+        background:#1565c0;
+        color:white;
+        border:none;
+        padding:10px 25px;
+        margin:5px;
+        border-radius:5px;
+        cursor:pointer;
+        font-size:16px;
+    }
+
+    input[type=submit]:hover,
+    input[type=reset]:hover{
+        background:#0d47a1;
+    }
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Student Registration Form</h2>
+
+<form>
+
+<table>
+
+<tr>
+<td><label for="name">Student Name</label></td>
+<td>
+<input type="text"
+id="name"
+name="name"
+placeholder="Enter your full name"
+pattern="[A-Za-z ]{3,30}"
+title="3 to 30 letters and spaces only"
+required>
+</td>
+</tr>
+
+<tr>
+<td><label for="email">Email Address</label></td>
+<td>
+<input type="email"
+id="email"
+name="email"
+placeholder="example@gmail.com"
+required>
+</td>
+</tr>
+
+<tr>
+<td><label for="password">Password</label></td>
+<td>
+<input type="password"
+id="password"
+name="password"
+placeholder="Minimum 8 characters"
+pattern=".{8,}"
+title="At least 8 characters"
+required>
+</td>
+</tr>
+
+<tr>
+<td><label for="age">Age</label></td>
+<td>
+<input type="number"
+id="age"
+name="age"
+min="18"
+max="60"
+required>
+</td>
+</tr>
+
+<tr>
+<td><label for="dob">Date of Birth</label></td>
+<td>
+<input type="date"
+id="dob"
+name="dob"
+required>
+</td>
+</tr>
+
+<tr>
+<td><label id="gender-label">Gender</label></td>
+<td role="group" aria-labelledby="gender-label">
+<input type="radio" id="gender-male" name="gender" value="Male" required>
+<label for="gender-male">Male</label>
+&nbsp;&nbsp;
+<input type="radio" id="gender-female" name="gender" value="Female">
+<label for="gender-female">Female</label>
+&nbsp;&nbsp;
+<input type="radio" id="gender-other" name="gender" value="Other">
+<label for="gender-other">Other</label>
+</td>
+</tr>
+
+<tr>
+<td><label id="skills-label">Skills</label></td>
+<td role="group" aria-labelledby="skills-label">
+<input type="checkbox" id="skill-html" name="skills" value="HTML">
+<label for="skill-html">HTML</label>
+&nbsp;
+<input type="checkbox" id="skill-css" name="skills" value="CSS">
+<label for="skill-css">CSS</label>
+&nbsp;
+<input type="checkbox" id="skill-js" name="skills" value="JavaScript">
+<label for="skill-js">JavaScript</label>
+&nbsp;
+<input type="checkbox" id="skill-python" name="skills" value="Python">
+<label for="skill-python">Python</label>
+</td>
+</tr>
+
+<tr>
+<td><label for="department">Department</label></td>
+<td>
+<select id="department" name="department" required>
+<option value="">--Select Department--</option>
+<option value="CSE">CSE</option>
+<option value="IT">IT</option>
+<option value="ECE">ECE</option>
+<option value="AIDS">AIDS</option>
+<option value="EEE">EEE</option>
+<option value="Mechanical">Mechanical</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td><label for="address">Address</label></td>
+<td>
+<textarea
+id="address"
+name="address"
+rows="4"
+placeholder="Enter your address"
+required></textarea>
+</td>
+</tr>
+
+<tr>
+<td><label for="favcolor">Favorite Color</label></td>
+<td>
+<input type="color" id="favcolor" name="favcolor">
+</td>
+</tr>
+
+<tr>
+<td><label for="resume">Upload Resume</label></td>
+<td>
+<input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+</td>
+</tr>
+
+<tr>
+<td><label for="skilllevel">Programming Skill Level</label></td>
+<td>
+<input type="range"
+id="skilllevel"
+name="skilllevel"
+min="0"
+max="100"
+value="50">
+</td>
+</tr>
+
+<tr>
+<td colspan="2" class="buttons">
+<input type="submit" value="Register">
+<input type="reset" value="Clear">
+</td>
+</tr>
+
+</table>
+
+</form>
+</div>
+</body>
+</html>
